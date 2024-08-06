@@ -1,10 +1,13 @@
-//For loop print  even numbers
+//For loop find odd or even numbers
 
 public class basic{
     static int more(int a){
-        for(int i=2;i<=a;i+=2){
-
-            System.out.println(i);
+        for(int i=0;i<=a;i++){
+            if(i%2 == 0){
+            System.out.println(i+" is even number");}
+            else{
+                System.out.println(i+" is odd number");
+            }
         }
         return 0;
     }
