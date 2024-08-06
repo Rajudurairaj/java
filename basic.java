@@ -1,18 +1,21 @@
-//For loop find odd or even numbers
+//For loop find odd or even numbers, divide and multiply
 
 public class basic{
     static int more(int a){
-        for(int i=0;i<=a;i++){
+        int y=0;
+        for(int i=50;i<=a;i++){
             if(i%2 == 0){
-            System.out.println(i+" is even number");}
+                y=i*10;
+            System.out.println(y+" is even number");}
             else{
-                System.out.println(i+" is odd number");
+                y=i/10;
+                System.out.println(y+" is odd number");
             }
         }
         return 0;
     }
     public static void main(String[] args){
-       int n=100;
+       int n=60;
        basic obj = new basic();
        obj.more(n);
     }
