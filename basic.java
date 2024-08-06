@@ -1,13 +1,14 @@
-//For loop
+//For loop print numbers
 
 public class basic{
-    void more(int a){
+    static int more(int a){
         for(int i=0;i<=a;i++){
-            System.out.println("HELLO WORLD");
+            System.out.println(i);
         }
+        return 0;
     }
     public static void main(String[] args){
-       int n=6;
+       int n=10;
        basic obj = new basic();
        obj.more(n);
     }
