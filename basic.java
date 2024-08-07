@@ -1,12 +1,7 @@
-//function Math.pow() and type casting double to int
+// multiple class and object creation
 import java.util.Scanner;
 public class basic{
      int more(int a,int b){
-        /*Using TypeCasting
-        Using Double.intValue() method
-        Using Math.round() method 
-        double data = 3452.345
-        int value = (int)data;*/
         int s;
         s=(int)Math.pow(a,b);
 
@@ -19,9 +14,27 @@ public class basic{
         int n= myobj.nextInt();
         basic obj = new basic();
         System.out.println(obj.more(p,n));
+        test obb = new test();
+        test obb1 = new test();
+        obb.display();
+        obb1.display();
+        testengg t1 =new testengg();
+        testengg t2 =new testengg();
+        t1.dis();
+        t2.dis();
     }
 } 
+ class test{
+    void display(){
+        System.out.println("HELLO");
+    }
+ }
+ class testengg{
+void dis(){
+    System.out.println("WORLD");
+}
 
+ }
 
 
 
