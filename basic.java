@@ -1,20 +1,22 @@
-//while loop print digits with run time input
+//For loop print sum of digits with run time input
 import java.util.Scanner;
 public class basic{
-     long more(long a){
+     long more(long a,Long b){
         long x,y,s=0;
-        while(a>0){
-            y=a%10;
-            s+=y;
-            a/=10;
+        for(Long c=a;c<=b;c++){
+            s+=c;
         }
         return s;
     }
     public static void main(String[] args){
         Scanner myobj = new Scanner(System.in);
+        System.out.println("Enter numbers");
         long p = myobj.nextLong();
-       long n=123456789;
+       long n= myobj.nextLong();
        basic obj = new basic();
-       System.out.println(obj.more(p));
+       System.out.println(obj.more(p,n));
     }
 }
+
+
+
