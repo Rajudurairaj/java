@@ -1,11 +1,11 @@
-//  String p = myobj.nextLine(); .nextLine() commant print the all words
+//System.out.println(p.charAt(0)); 0 mean pritnt that index value only
 import java.util.Scanner;
 public class basic{
     public static void main(String[] args){
         Scanner myobj = new Scanner(System.in);
-        System.out.println("Enter numbers");
+        System.out.println("Enter string");
         String p = myobj.nextLine();
-        System.out.println(p);
+        System.out.println(p.charAt(0));
 }
 } 
  
