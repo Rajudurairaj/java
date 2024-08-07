@@ -1,21 +1,19 @@
-//Find integer length
+//function Math.pow() for squre
 import java.util.Scanner;
 public class basic{
-     long more(Long b){
-        long x,y,s=0;
-        while(b>0){
-            b/=10;
-            s+=1;
-        }
+     double more(Double a,Double b){
+        long x,y;
+        double s;
+        s=Math.pow(a,b);
         return s;
     }
     public static void main(String[] args){
         Scanner myobj = new Scanner(System.in);
         System.out.println("Enter numbers");
-        long p = myobj.nextLong();
-       //long n= myobj.nextLong();
-       basic obj = new basic();
-       System.out.println(obj.more(p));
+        double p = myobj.nextLong();
+        double n= myobj.nextLong();
+        basic obj = new basic();
+        System.out.println(obj.more(p,n));
     }
 }
 
