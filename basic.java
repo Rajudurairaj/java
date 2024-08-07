@@ -1,25 +1,18 @@
-//while loop print digits
+//while loop print sum of digits
 
 public class basic{
-     int more(long a){
+     long more(long a){
         long x,y,s=0;
         while(a>0){
             y=a%10;
             s+=y;
-            s*=10;
             a/=10;
         }
-        s/=10;
-        while(s>0){
-            x=s%10;
-            System.out.println(x);
-            s/=10;
-        }
-        return 0;
+        return s;
     }
     public static void main(String[] args){
        long n=123456789;
        basic obj = new basic();
-       obj.more(n);
+       System.out.println(obj.more(n));
     }
 }
