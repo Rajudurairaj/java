@@ -1,23 +1,23 @@
-// find value length and separate the digits add+length after print the output using keyword integer.tiString()
+//Array
 import java.util.Scanner;
 class basic{
-void display(int a){
-
-System.out.println("Total"+a);
+void display(String s[],int a){
+    for(int j=0;j<a;j++){
+System.out.println(s[j]);
     }
  
-    public static void main(String[] args) {
+ }    public static void main(String[] args) {
     Scanner myobj = new Scanner(System.in);
-    int v = myobj.nextInt(),x=0;
-    String vstr = Integer.toString(v);
-    int l = vstr.length();
+    //int v = myobj.nextInt();
+    String[] str= new String [3];
 
-    for(char c : vstr.toCharArray()){
-        System.out.println("Ecah digits"+c);
-        int digits = Character.getNumericValue(c);
-        x+=l+digits;
-               }
+    for(int i=0;i<3;i++){
+            str[i] = myobj.nextLine();    
+                        }
+            
             basic obj = new basic();
-            obj.display(x);
+            obj.display(str,3);
+    System.out.println("result");
     }
+    
 }
