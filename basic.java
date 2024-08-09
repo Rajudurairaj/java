@@ -1,21 +1,24 @@
-//Array sum integer int scanner input for array length and find even or odd if even multiply10 else odd divide10
+//Array find max and min number
 import java.util.Scanner;
 class basic{
 int display(int s[],int a){
-    int u;
+    int u,max,min;
+    max=s[0];
+    min=s[0];
     for(int j=0;j<a;j++){
-    if(s[j]%2==0){
-    u=s[j]*10;
-    System.out.println("result is "+u);
+    if(max<s[j]){
+    max=s[j];
     }
-    else{
-        u=s[j]/10;
-        System.out.println("result is "+u);
+    else if(min>s[j]){
+        min=s[j];
     }
-    }
+}
+    System.out.println("Max number is"+max+"\n"+"Min number is"+min);
+
     return 0;
  
- }    public static void main(String[] args) {
+ } 
+ public static void main(String[] args) {
     Scanner myobj = new Scanner(System.in);
     int v = myobj.nextInt();
     int[] str= new int [v];
