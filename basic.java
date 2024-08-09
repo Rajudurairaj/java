@@ -1,12 +1,19 @@
-// Array sum integer int scanner input for array length
+//Array sum integer int scanner input for array length and find even or odd if even multiply10 else odd divide10
 import java.util.Scanner;
 class basic{
 int display(int s[],int a){
-    int u=0;
+    int u;
     for(int j=0;j<a;j++){
-    u+=s[j];
+    if(s[j]%2==0){
+    u=s[j]*10;
+    System.out.println("result is "+u);
     }
-    return u;
+    else{
+        u=s[j]/10;
+        System.out.println("result is "+u);
+    }
+    }
+    return 0;
  
  }    public static void main(String[] args) {
     Scanner myobj = new Scanner(System.in);
@@ -16,6 +23,7 @@ int display(int s[],int a){
             str[i] = myobj.nextInt();    }
             
             basic obj = new basic();
-    System.out.println("result is "+obj.display(str,v));
+            obj.display(str,v);
+    //System.out.println("result is "+obj.display(str,v));
     }
 }
