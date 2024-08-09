@@ -1,4 +1,4 @@
-// Array sum integer
+// Array sum integer int scanner input for array length
 import java.util.Scanner;
 class basic{
 int display(int s[],int a){
@@ -10,12 +10,12 @@ int display(int s[],int a){
  
  }    public static void main(String[] args) {
     Scanner myobj = new Scanner(System.in);
-    //int v = myobj.nextInt();
-    int[] str= new int [5];
-    for(int i=0;i<5;i++){
+    int v = myobj.nextInt();
+    int[] str= new int [v];
+    for(int i=0;i<v;i++){
             str[i] = myobj.nextInt();    }
             
             basic obj = new basic();
-    System.out.println("result is "+obj.display(str,5));
+    System.out.println("result is "+obj.display(str,v));
     }
 }
