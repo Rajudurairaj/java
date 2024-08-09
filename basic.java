@@ -1,32 +1,25 @@
-//Array find max and min number
+// find value length and separate the digits add+length after print the output
 import java.util.Scanner;
 class basic{
-int display(int s[],int a){
-    int u,max,min;
-    max=s[0];
-    min=s[0];
-    for(int j=0;j<a;j++){
-    if(max<s[j]){
-    max=s[j];
-    }
-    else if(min>s[j]){
-        min=s[j];
-    }
-}
-    System.out.println("Max number is"+max+"\n"+"Min number is"+min);
+void display(int a){
 
-    return 0;
+System.out.println(a);
+    }
  
- } 
- public static void main(String[] args) {
+    public static void main(String[] args) {
     Scanner myobj = new Scanner(System.in);
-    int v = myobj.nextInt();
-    int[] str= new int [v];
-    for(int i=0;i<v;i++){
-            str[i] = myobj.nextInt();    }
+    int v = myobj.nextInt(),x=0,i=0;
+    String vstr = Integer.toString(v);
+    int l = vstr.length();
+    while(v != 0){
+            x+=v%10;
+            v/=10;
+            i++;
+               }
+               x+=(i*i);
             
             basic obj = new basic();
-            obj.display(str,v);
-    //System.out.println("result is "+obj.display(str,v));
+            obj.display(x);
+    System.out.println("result"+l);
     }
 }
